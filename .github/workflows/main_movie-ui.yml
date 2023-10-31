@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Movie-ui'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_72DBB0B80E694AAE914FF8DE098A8CB2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_18782E2402E94C71A4687636E0881BB5 }}
           package: .
