@@ -59,12 +59,12 @@ export class RegisteruserComponent implements OnInit {
     }
     else{
       this.status=true
-      //console.log(this.UserForm.value)
+      console.log(this.UserForm.value)
       this.service.addUser(this.UserForm.value).subscribe(data=>{
         this.user=data;
         console.log(data)
       })
-      //alert("Registration is successful");
+      alert("Registration is successful");
       this.showMsg= true;
       this.UserForm.reset();
       this.route.navigate(['/register']);
@@ -74,7 +74,7 @@ export class RegisteruserComponent implements OnInit {
     this.route.navigate(['']);
   }
   ngOnInit(): void {
-    // this.user1=this.UserForm.value;
+     this.user1=this.UserForm.value;
   }
 
 }
